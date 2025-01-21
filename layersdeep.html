@@ -1,0 +1,92 @@
+<DOCTYPE! html>
+<html>
+<head>
+<meta http-equip="Content-Type"
+content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="major project website.css">
+<style>
+td{
+	text-align:center;
+	padding-left:8%;
+}
+tr{
+padding:20px;}
+</style>
+<title> LayersDeep - have fun with filtering
+</title> <!title can only be defined within a head tag>
+<script type="text/javascript" src="https://www.dukelearntoprogram.com/course1/common/js/cs101/cs101.js"></script>
+<script type="text/javascript" src="https://www.dukelearntoprogram.com/course1/common/js/cs101/SimpleImage.js"></script>
+<script>
+var image;
+var temp = 0;
+function upload()
+{
+var imgcanvas= document.getElementById("can1");
+var fileinput= document.getElementById("finput");
+image=new SimpleImage(fileinput);
+image.drawTo(imgcanvas);
+temp = 1;
+}
+function disrupt()
+{
+if(temp == 0)
+{document.getElementById("temp").innerHTML="Please upload image!";
+}
+else 
+{
+for (var pixel of image.values())
+{var rc=255-pixel.getRed();
+var gc=255-pixel.getGreen();
+var bc=255-pixel.getBlue();
+pixel.setRed(rc);
+pixel.setGreen(gc);
+pixel.setBlue(bc);
+}
+
+for (var pixel of image.values())
+{var sum= (pixel.getX()+pixel.getY());
+if(sum%25==0){
+pixel.setRed(0);
+pixel.setGreen(0);
+pixel.setBlue(0);
+}}
+
+var imgcanvas= document.getElementById("can2");
+image.drawTo(imgcanvas);
+temp = 0;
+document.getElementById("temp").innerHTML="";
+}}
+</script>
+</head>
+
+ <body>
+ <header> 
+
+ <ul> <li class="navbar" style="float:left"><h1> layersdeep </h1></li>
+    <li class="navbar"><a href="file:///C:/Users/HOME/OneDrive/Desktop/HTML/Major%20project%20website.html"> filters</a></li>
+	 <li class="navbar"> <a href="file:///C:/Users/HOME/OneDrive/Desktop/HTML/major%20project%20landing%20page.html">home</a></li>
+ </ul>
+ </header>
+ <hr>
+ </hr>
+ <div style=" background-color:black">
+ <h3 class="filter"><span style="color:white"><b>#1 The Grumpy Zebra</b></span></h3><br>
+</div>
+ <p style="padding-left:28%"> Convert anything positive in your life into something negative and fashionably striped! </p>
+ <img  class="eximg" src="C:\Users\HOME\Downloads\Frame 2.png">
+ <hr></hr>
+<h3 class="filter">Try it out!</h3>
+<p style="padding-left:20%"><strong>Disclaimer:</strong> Image may appear distorted, but true size of image remains unchanged. Save image to view proper sizing.</p>
+<table>
+<tr><td><label for="finput">Select Image <nobr>
+<input type="file" id="finput" onchange="upload()" class="custom-file-input"/></label></p>
+<canvas id="can1"></canvas>
+</td>
+<td style="padding-left:15%"><p><input type="button" value="Apply Grumpy Zebra" onclick="disrupt()"/></p>
+<p id="temp"></p>
+<canvas id="can2"></canvas>
+</td></tr>
+</table>
+<br>
+ </body>
+ </html>
