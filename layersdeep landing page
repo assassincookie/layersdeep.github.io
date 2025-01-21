@@ -1,0 +1,31 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+<meta http-equip="Content-Type"
+content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="major project website.css">
+<title> LayersDeep - have fun with filtering
+</title>
+</head>
+
+ <body>
+ <header> 
+
+ <ul> <li class="navbar" style="float:left"><h1> layersdeep </h1></li>
+     <li class="navbar"><a href="file:///C:/Users/HOME/OneDrive/Desktop/HTML/Major%20project%20website.html"> filters</a></li>
+	 <li class="navbar"> <a href="file:///C:/Users/HOME/OneDrive/Desktop/HTML/major%20project%20landing%20page.html">home</a></li>
+ </ul>
+ </header>
+ 
+ <img class="heroimg" src="C:\Users\HOME\Downloads\Frame 1.png" alt=" Hero Image: 'eccentric, exciting, enjoyable' formatted on holographic bg">
+ <table style="padding-left:80px">
+ <br>
+ <br>
+ <tr><td><h2><span style="display:inline-block"> have fun <br> with filtering </span><h2></td></tr>
+
+<tr style="margin-top:-40px"><td> <h3 class="landing"> Try out new filters on your <br>photos and save them.<h3></td></tr>
+<tr><td><button type="button" class="btnlanding" onclick="location.href='file:///C:/Users/HOME/OneDrive/Desktop/HTML/Major%20project%20website.html'">Click to continue ></button></td></tr>
+</table>
+ </body>
+ </html>
