@@ -1,0 +1,171 @@
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+body{  
+margin:20px;
+background-color:white;
+font-family: 'Inter' ,sans-serif;
+}
+h1{
+font-family:'Inter', sans-serif;
+letter-spacing:-4px;
+ font-size: 51px;
+font-weight:1000;
+color: black;
+text-align: left;
+margin-top:-20px;
+}
+h2{ 
+font-family:'Inter', sans-serif;
+letter-spacing:-4px; 
+font-size: 60px;
+font-weight:980;
+color: black;
+text-align: right;
+ float:right;
+}
+h3.landing{ font-family:'Inter', sans-serif; 
+color: black;
+font-weight:400;
+font-size:32px;
+letter-spacing:-2px;
+text-align: right;
+float:right;
+margin-top:-40px;
+}
+h3.filter{ font-family:'Inter', sans-serif; 
+color: black;
+font-weight:400;
+font-size:32px;
+letter-spacing:-2px;
+text-align: center;
+margin-top:-40px;
+margin-left: -1%;
+padding-left: 0px;
+padding-bottom:-40px;
+margin-bottom:-10px;
+}
+hr{
+	color:white;
+	margin:10px;
+	padding:10px;
+	border:none;
+}
+}
+p{  font-family:'Inter', sans-serif;
+ font-size: 20px;
+color: black;
+text-align: center;
+ padding:20px 20px;
+margin-left: 16%;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li.navbar{
+float: right;
+  display:inline-block;
+ padding: 20px;
+
+}
+canvas{margin-left:17%;
+width:540px;
+height:270px;
+border:1px solid black;
+}
+
+input[type=button]{
+	font-family:'Inter', sans-serif;
+ background-color: black; 
+ margin-top: 1%;
+ margin-left: 60%;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;  
+  border-radius:8px;
+}
+input{
+  display: none;
+}
+label{
+	font-family:'Inter', sans-serif;
+ background-color: black; 
+  border: none;
+  color: white;
+  padding: 13px 23px;
+  margin-left: 54%;
+  margin-top: 2%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius:8px;}
+  
+  .custom-file-input{
+  visibility: hidden;
+}
+.custom-file-input:before {
+  content: 'Select image';
+  display: inline-block;
+  background: #c9cac5;
+  border: none;
+  cursor: pointer;
+  
+}
+.heroimg{
+	float:left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.eximg{
+	float:left;
+	margin-left: 15%;
+	margin-top:-40px;
+	padding-top:-50px;
+	padding-right: 15%;
+}
+.btnlanding{
+float:right;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition-duration: 0.3s;  
+  border:2px black solid;
+  }
+  .btnlanding:hover{
+	  background-color: white;
+  color: black;
+  border:2px black solid;}
+	  
+img.myface{
+	float:right;
+	margin-right:20px;
+}
+a{
+	text-decoration:none;
+}
+li.contact{
+	list-style:none;
+	text-align:left;
+	
+}
